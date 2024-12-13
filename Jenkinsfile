@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/xdrking/ci-cd-demo.git'  // Proje GitHub repo URL'si
+                git branch:'xdrking', url: 'https://github.com/xdrking/ci-cd-demo.git'  // Proje GitHub repo URL'si
             }
         }
         stage('Build Docker Image') {
